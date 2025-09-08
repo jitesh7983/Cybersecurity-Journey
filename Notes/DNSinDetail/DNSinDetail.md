@@ -6,7 +6,7 @@ Instead of remembering `104.26.10.229`, you can just type `tryhackme.com`.
 ---
 
 ## 🏷 Domain Hierarchy
-(images/DomainHierarchy.png)
+![DNS Hierarchy](images/DomainHierarchy.png)
 
 - **TLD (Top Level Domain)** → The right-most part of a domain.  
   - Example: `tryhackme.com` → `.com`  
@@ -25,4 +25,5 @@ Instead of remembering `104.26.10.229`, you can just type `tryhackme.com`.
 ✅ **Summary**:  
 - DNS = maps domain names → IP addresses  
 - Domain hierarchy = TLD → SLD → Subdomain  
+
 
