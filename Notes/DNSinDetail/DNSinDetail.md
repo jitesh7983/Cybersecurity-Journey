@@ -1,26 +1,27 @@
-🌍 DNS (Domain Name System)
+# 🌍 DNS (Domain Name System)
 
-DNS makes it easier to use the internet by mapping domain names → IP addresses.
-Instead of remembering 104.26.10.229, you just type tryhackme.com.
+DNS provides a simple way to communicate with devices on the internet without remembering complex IP addresses.  
+Instead of remembering `104.26.10.229`, you can just type `tryhackme.com`.
 
-🏷 Domain Hierarchy
+---
 
-(insert image here later)
+## 🏷 Domain Hierarchy
+*(add diagram here later)*
 
-TLD (Top Level Domain) → Right-most part of a domain
+- **TLD (Top Level Domain)** → The right-most part of a domain.  
+  - Example: `tryhackme.com` → `.com`  
+  - Types:  
+    - **gTLD (Generic)** → `.com`, `.org`, `.edu`, `.gov`  
+    - **ccTLD (Country Code)** → `.in`, `.uk`, `.ca`  
 
-Example: tryhackme.com → .com
+- **Second-Level Domain (SLD)** → Appears before the TLD.  
+  - Example: `tryhackme` in `tryhackme.com`  
 
-Types:
+- **Subdomain** → Placed before the SLD.  
+  - Example: `admin` in `admin.tryhackme.com`
 
-gTLD (Generic) → .com, .org, .edu, .gov
+---
 
-ccTLD (Country Code) → .in, .uk, .ca
-
-Second-Level Domain (SLD) → Just before the TLD
-
-Example: tryhackme in tryhackme.com
-
-Subdomain → Placed before the SLD
-
-Example: admin in admin.tryhackme.com
+✅ **Summary**:  
+- DNS = maps domain names → IP addresses  
+- Domain hierarchy = TLD → SLD → Subdomain  
