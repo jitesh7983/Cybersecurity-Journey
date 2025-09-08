@@ -39,7 +39,7 @@ This room helped me understand how the Domain Name System (DNS) works. It covere
 
 ## Commands and Output
 
-![CLI image](images/CLI.png)
+![CLI image](images/cli.png)
 
 ### Query A record for main website
 
@@ -51,4 +51,3 @@ dig www.website.thm A
 ## Completion Proof
 
 ![Completion Image](images/completion.png)
-![](images/cli.png)
