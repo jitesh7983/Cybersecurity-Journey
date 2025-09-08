@@ -59,8 +59,55 @@ DNS isn’t just for websites — multiple record types exist.
   - Domain ownership verification  
 
 ---
+# What Happens When You Make a DNS Request  
+
+When you request a domain, the lookup follows a series of steps until the IP is resolved:  
+
+---
+
+### 🔹 Steps in DNS Resolution  
+
+1. **Local Cache Check**  
+   - Your computer checks its own DNS cache.  
+   - If found → returns immediately.  
+
+2. **Recursive DNS Server**  
+   - Usually provided by your ISP (can be Google, Cloudflare, etc.).  
+   - Checks its cache.  
+   - If not found → queries further.  
+
+3. **Root DNS Servers**  
+   - Act as the **backbone of the internet**.  
+   - Direct the query to the appropriate **Top Level Domain (TLD) server**.  
+   - Example: `.com`, `.org`, `.net`.  
+
+4. **TLD DNS Servers**  
+   - Provide the location of the **Authoritative Nameserver** for the domain.  
+   - Example: for `tryhackme.com` → `kip.ns.cloudflare.com`, `uma.ns.cloudflare.com`.  
+
+5. **Authoritative DNS Server**  
+   - Holds the **actual DNS records** (A, MX, CNAME, etc.).  
+   - Returns the final IP address.  
+
+6. **Response & Caching**  
+   - The Recursive DNS Server caches the record (for **TTL** seconds).  
+   - Returns the answer to your computer.  
+   - Caching avoids repeated lookups for the same domain.  
+
+---
+
+### 🔹 Diagram  
+
+*(Add diagram here showing: Client → Recursive DNS → Root → TLD → Authoritative → Back to Client)*  
+
+---
+
+📌 **Key Term:**  
+- **TTL (Time To Live):** Value (in seconds) that specifies how long the record is cached before expiring.  
+
 
 📌 These records are the backbone of how domains resolve to IPs, mail servers, and services.
+
 
 
 
