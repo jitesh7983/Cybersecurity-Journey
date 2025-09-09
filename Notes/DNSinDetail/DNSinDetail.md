@@ -96,9 +96,9 @@ When you request a domain, the lookup follows a series of steps until the IP is 
 
 ---
 
-### 🔹 Diagram  
+### 🔹Flow Diagram  
 
-*(Add diagram here showing: Client → Recursive DNS → Root → TLD → Authoritative → Back to Client)*  
+ Client → Recursive DNS → Root → TLD → Authoritative → Back to Client)*  
 
 ---
 
@@ -107,6 +107,7 @@ When you request a domain, the lookup follows a series of steps until the IP is 
 
 
 📌 These records are the backbone of how domains resolve to IPs, mail servers, and services.
+
 
 
 
